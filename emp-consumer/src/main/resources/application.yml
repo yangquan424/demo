@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: emp-consumer
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8082/eureka,http://127.0.0.1:8083/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
